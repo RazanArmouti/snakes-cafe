@@ -1,4 +1,4 @@
-def  restaurantmenu():
+def restaurantmenu():
     print("""
     **************************************
     **    Welcome to the Snakes Cafe!   **

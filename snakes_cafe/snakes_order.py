@@ -1,16 +1,13 @@
-menu = ['wings', 'cookies',
-        'spring rolls', 'salmon',
-        'steak', 'meat tornado',
-        'a literal garden', 'ice Cream',
-        'cake', 'pie', 'coffee',
-        'tea', 'unicorn tears']
+menu = ['wings', 'cookies','spring rolls', 'salmon','steak', 'meat tornado','a literal garden',
+ 'ice Cream','cake', 'pie', 'coffee','tea', 'unicorn tears']
 user_orders = []
 last_orders = []
 
 
 def ordering():
 
-    order = input('>> ').lower()
+    order = input('> ').lower()
+
     if order in menu:
         user_orders.append(order)
         if order not in last_orders:
@@ -20,7 +17,7 @@ def ordering():
         ordering()
 
     elif order == 'quit':
-        print('thank you \n your order will be ready soon \n Your order is:')
+        print('thank you your order will be ready soon Your order is:')
         for list_item in last_orders:
             print(f'{user_orders.count(list_item)} order of {list_item} ')
     elif order not in menu:
